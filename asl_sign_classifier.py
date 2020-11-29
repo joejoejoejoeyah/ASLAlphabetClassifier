@@ -228,17 +228,3 @@ We believe that our model has achieved these results because of the dataset we h
 *How could we improve?*\
 To achieve a higher validation accuracy we would need to use a dataset that has much higher variation. Unfortunately it is very difficult to find an effective way to augment the dataset because some signs with mean different things when they are rotated or skewed. 
 """
-
-'''
-dropout_model = tf.keras.Sequential([
-    layers.Dense(512, activation='elu', input_shape=(FEATURES,)),
-    layers.Dropout(0.5),
-    layers.Dense(512, activation='elu'),
-    layers.Dropout(0.5),
-    layers.Dense(512, activation='elu'),
-    layers.Dropout(0.5),
-    layers.Dense(512, activation='elu'),
-    layers.Dropout(0.5),
-    layers.Dense(1)
-])
-'''
